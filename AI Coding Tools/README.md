@@ -1,7 +1,7 @@
 # CMPE 258 - Deep Learning - Assignment 1: AI Coding Tools
 
 **Course:** CMPE 258 - Deep Learning  
-**Semester:** Spring 2025  
+**Semester:** Spring 2026  
 **Assignment:** Assignment 1 - Exploring AI Coding Tools  
 **Student:** Prachii26  
 **Repository:** [DeepLearningCMPE258/AI Coding Tools](https://github.com/Prachii26/DeepLearningCMPE258/tree/main/AI%20Coding%20Tools)
@@ -576,7 +576,7 @@ This work represents original implementation and learning. While AI tools were u
 **Student:** Prachii26  
 **Course:** CMPE 258 - Deep Learning  
 **Institution:** San Jose State University  
-**Semester:** Spring 2025
+**Semester:** Spring 2026
 
 **Repository:** [github.com/Prachii26/DeepLearningCMPE258](https://github.com/Prachii26/DeepLearningCMPE258)
 ---
