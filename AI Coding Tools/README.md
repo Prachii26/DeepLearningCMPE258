@@ -542,273 +542,54 @@ flutter test --coverage
 ### D. MNIST Neural Network Classifier
 
 **📂 Directory:** `/mnist-keras-classifier/`
+# MNIST Digit Classifier (TensorFlow Keras)
 
-**Objective:**  
-Implement a complete neural network for MNIST digit classification using Keras/TensorFlow with comprehensive metrics, visualizations, and model evaluation.
+A high-performance convolutional neural network (CNN) for classifying hand-written digits from the MNIST dataset. This project includes professional-grade monitoring, callbacks, and visualization metrics.
 
-#### Project Overview
+## 🚀 Features
 
-This project demonstrates a complete deep learning workflow including:
-- Data preprocessing and augmentation
-- Model architecture design
-- Training with validation
-- Performance evaluation
-- Comprehensive visualizations
-- Model deployment and saving
+- **CNN Architecture**: Optimized for image classification with Conv2D, MaxPooling, and Dropout layers.
+- **Advanced Callbacks**:
+  - `EarlyStopping`: Halts training when validation loss stops improving (restores best weights).
+  - `ModelCheckpoint`: Saves the best model based on validation accuracy.
+  - `ReduceLROnPlateau`: Dynamically adjusts learning rate to refine training.
+- **Rich Analytics**:
+  - Accuracy and Loss history plots.
+  - Confusion Matrix heatmap for error analysis.
+  - Per-digit accuracy summary table.
+  - 5x5 grid visualization of sample predictions.
 
-#### Model Architecture
+## 🛠️ Environment Setup
 
-```python
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import Dense, Conv2D, MaxPooling2D, Flatten, Dropout, BatchNormalization
+Python 3.11 and all required dependencies have been pre-installed for this project.
 
-model = Sequential([
-    # Convolutional Block 1
-    Conv2D(32, (3, 3), activation='relu', input_shape=(28, 28, 1)),
-    BatchNormalization(),
-    Conv2D(32, (3, 3), activation='relu'),
-    MaxPooling2D((2, 2)),
-    Dropout(0.25),
-    
-    # Convolutional Block 2
-    Conv2D(64, (3, 3), activation='relu'),
-    BatchNormalization(),
-    Conv2D(64, (3, 3), activation='relu'),
-    MaxPooling2D((2, 2)),
-    Dropout(0.25),
-    
-    # Dense Layers
-    Flatten(),
-    Dense(256, activation='relu'),
-    BatchNormalization(),
-    Dropout(0.5),
-    Dense(128, activation='relu'),
-    Dropout(0.5),
-    Dense(10, activation='softmax')
-])
+### Core Dependencies
+- `tensorflow`
+- `numpy`
+- `matplotlib`
+- `seaborn`
+- `scikit-learn`
+- `pandas`
+- `notebook` (Jupyter)
 
-model.compile(
-    optimizer='adam',
-    loss='categorical_crossentropy',
-    metrics=['accuracy']
-)
-```
+## 📖 How to Run
 
-**Model Summary:**
-- Total Parameters: ~1.2M
-- Trainable Parameters: ~1.2M
-- Non-trainable Parameters: 0
+1. **Open Terminal**: Navigate to the project directory.
+2. **Start Jupyter Server**:
+   ```powershell
+   py -m notebook mnist_classifier.ipynb
+   ```
+3. **Run All Cells**: Execute the notebook from start to finish to train the model and view metrics.
 
-#### Training Configuration
+## 📹 Video Guide
+For a narrated walkthrough of the code and architecture, refer to:
+[video_guide.md](./video_guide.md)
 
-```python
-# Training parameters
-BATCH_SIZE = 128
-EPOCHS = 30
-LEARNING_RATE = 0.001
-VALIDATION_SPLIT = 0.2
-
-# Callbacks
-callbacks = [
-    EarlyStopping(monitor='val_loss', patience=5, restore_best_weights=True),
-    ReduceLROnPlateau(monitor='val_loss', factor=0.5, patience=3),
-    ModelCheckpoint('model/best_model.h5', save_best_only=True)
-]
-
-# Data Augmentation
-datagen = ImageDataGenerator(
-    rotation_range=10,
-    zoom_range=0.1,
-    width_shift_range=0.1,
-    height_shift_range=0.1
-)
-```
-
-#### Performance Metrics
-
-**Final Results:**
-```
-Training Accuracy:   99.45%
-Validation Accuracy: 99.21%
-Test Accuracy:       99.18%
-
-Training Loss:       0.0165
-Validation Loss:     0.0243
-Test Loss:           0.0251
-```
-
-**Per-Class Performance:**
-```
-Class | Precision | Recall | F1-Score | Support
-------|-----------|--------|----------|--------
-  0   |   0.993   | 0.997  |  0.995   |  980
-  1   |   0.995   | 0.997  |  0.996   |  1135
-  2   |   0.992   | 0.990  |  0.991   |  1032
-  3   |   0.990   | 0.992  |  0.991   |  1010
-  4   |   0.993   | 0.991  |  0.992   |  982
-  5   |   0.990   | 0.988  |  0.989   |  892
-  6   |   0.994   | 0.993  |  0.993   |  958
-  7   |   0.992   | 0.991  |  0.991   |  1028
-  8   |   0.989   | 0.987  |  0.988   |  974
-  9   |   0.991   | 0.989  |  0.990   |  1009
-
-Avg   |   0.992   | 0.992  |  0.992   |  10000
-```
-
-#### Visualizations Generated
-
-1. **Training History** (`training_history.png`)
-   - Training vs Validation Accuracy
-   - Training vs Validation Loss
-   - Learning rate schedule
-
-2. **Confusion Matrix** (`confusion_matrix.png`)
-   - Normalized confusion matrix
-   - Heatmap visualization
-   - Misclassification analysis
-
-3. **Sample Predictions** (`sample_predictions.png`)
-   - Grid of test images
-   - True labels vs predictions
-   - Confidence scores
-
-4. **ROC Curves** (`roc_curves.png`)
-   - One-vs-Rest ROC for each class
-   - AUC scores
-   - Micro and macro averages
-
-5. **Precision-Recall Curves** (`precision_recall.png`)
-   - Per-class P-R curves
-   - Average precision scores
-
-6. **Learning Curves** (`learning_curves.png`)
-   - Training size vs performance
-   - Cross-validation scores
-
-#### Project Structure
-
-```python
-mnist-keras-classifier/
-├── mnist_classifier.py          # Main training script
-├── model_evaluation.py          # Evaluation utilities
-├── visualizations.py            # Plotting functions
-├── requirements.txt             # Dependencies
-├── README.md                    # Documentation
-│
-├── model/                       # Saved models
-│   ├── mnist_model.h5          # Best model weights
-│   ├── final_model.h5          # Final epoch model
-│   ├── model_architecture.json  # Architecture config
-│   └── training_config.json     # Training parameters
-│
-├── visualizations/              # Generated plots
-│   ├── training_history.png
-│   ├── confusion_matrix.png
-│   ├── sample_predictions.png
-│   ├── roc_curves.png
-│   ├── precision_recall.png
-│   └── learning_curves.png
-│
-├── notebooks/                   # Jupyter notebooks
-│   ├── mnist_analysis.ipynb    # Detailed analysis
-│   └── model_testing.ipynb     # Interactive testing
-│
-└── logs/                        # Training logs
-    └── tensorboard/            # TensorBoard logs
-```
-
-#### Dependencies
-
-```txt
-tensorflow==2.15.0
-keras==2.15.0
-numpy==1.24.3
-pandas==2.0.3
-matplotlib==3.7.2
-seaborn==0.12.2
-scikit-learn==1.3.0
-pillow==10.0.0
-jupyter==1.0.0
-```
-
-#### Running the Code
-
-**Training the Model:**
-```bash
-# Install dependencies
-pip install -r requirements.txt
-
-# Run training
-python mnist_classifier.py
-
-# With custom parameters
-python mnist_classifier.py --epochs 50 --batch-size 64 --learning-rate 0.0005
-```
-
-**Evaluation:**
-```bash
-# Evaluate saved model
-python model_evaluation.py --model model/best_model.h5
-
-# Generate all visualizations
-python visualizations.py
-```
-
-**Using Jupyter Notebook:**
-```bash
-# Start Jupyter
-jupyter notebook
-
-# Open notebooks/mnist_analysis.ipynb
-```
-
-#### Key Code Snippets
-
-**Data Loading:**
-```python
-from tensorflow.keras.datasets import mnist
-from tensorflow.keras.utils import to_categorical
-
-# Load data
-(X_train, y_train), (X_test, y_test) = mnist.load_data()
-
-# Preprocess
-X_train = X_train.reshape(-1, 28, 28, 1).astype('float32') / 255
-X_test = X_test.reshape(-1, 28, 28, 1).astype('float32') / 255
-
-# One-hot encode labels
-y_train = to_categorical(y_train, 10)
-y_test = to_categorical(y_test, 10)
-```
-
-**Training:**
-```python
-history = model.fit(
-    datagen.flow(X_train, y_train, batch_size=BATCH_SIZE),
-    epochs=EPOCHS,
-    validation_data=(X_val, y_val),
-    callbacks=callbacks,
-    verbose=1
-)
-```
-
-**Prediction:**
-```python
-# Make predictions
-predictions = model.predict(X_test)
-predicted_classes = np.argmax(predictions, axis=1)
-true_classes = np.argmax(y_test, axis=1)
-
-# Calculate accuracy
-accuracy = np.mean(predicted_classes == true_classes)
-print(f"Test Accuracy: {accuracy * 100:.2f}%")
-```
-
-#### AI Tools Used
-
-- **Google Antigravity** - For code generation and optimization
-- **Claude Code (wshobson skills)** - For architecture design
-- **GitHub Copilot** - For code suggestions and documentation
+## 📊 Model Metadata
+- **Dataset**: MNIST (60,000 training images, 10,000 test images)
+- **Input Shape**: 28x28x1
+- **Optimizer**: Adam
+- **Loss Function**: Categorical Crossentropy
 
 **📹 Code Walkthrough:** See [VideoURL.txt](VideoURL.txt) for detailed code explanation and training process
 
