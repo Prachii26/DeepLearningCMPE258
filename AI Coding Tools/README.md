@@ -15,10 +15,10 @@
 
 | Task | Project | Description | Status | Video Demo |
 |------|---------|-------------|--------|------------|
-| **A** | [Multimodal AI Demo](#a-multimodal-ai-with-gemini-pro) | Image/Video generation with Gemini Pro | ✅ Complete | [📹 Demo](VideoURL.txt) |
-| **B** | [NotesApp](#b-full-stack-web-application) | Full-stack web application | ✅ Complete | [📹 Demo](VideoURL.txt) |
-| **C** | [StepsTracker](#c-cross-platform-mobile-app) | Flutter mobile app | ✅ Complete | [📹 Demo](VideoURL.txt) |
-| **D** | [MNIST Classifier](#d-mnist-neural-network-classifier) | Neural network with Keras | ✅ Complete | [📹 Demo](VideoURL.txt) |
+| **A** | [Multimodal AI Demo](#a-multimodal-ai-with-gemini-pro) | Image/Video generation with Gemini Pro | ✅ Complete | [📹 Demo](https://youtu.be/G6181IqBKb8) |
+| **B** | [NotesApp](#b-full-stack-web-application) | Full-stack web application | ✅ Complete | [📹 Demo](https://youtu.be/kw36wvQIkiI) |
+| **C** | [StepsTracker](#c-cross-platform-mobile-app) | Flutter mobile app | ✅ Complete | [📹 Demo](https://youtu.be/KuEb77ZYFB4) |
+| **D** | [MNIST Classifier](#d-mnist-neural-network-classifier) | Neural network with Keras | ✅ Complete | [📹 Demo](https://youtu.be/RwuZi9rcA84) |
 
 ---
 
@@ -65,13 +65,11 @@ AI Coding Tools/
 │
 ├── 📂 multimodal-latest-model-demo/     # Task A: Gemini Pro Multimodal AI
 │   ├── multimodal_use_cases.ipynb      # Main Colab notebook
-│   ├── outputs/                         # Generated images, videos, results
-│   │   ├── image_generations/
-│   │   ├── video_outputs/
-│   │   └── conversation_examples/
-│   ├── README.md                        # Project-specific documentation
-│   └── requirements.txt                 # Python dependencies
-│
+│   └── outputs/                         # Generated images, videos, results
+│      ├── image_generations/
+│      ├── video_outputs/
+│      └── conversation_examples/
+│   
 ├── 📂 NotesApp/                         # Task B: Full-Stack Web Application
 │   ├── src/                             # Source code
 │   │   ├── components/                  # React/UI components
@@ -98,23 +96,9 @@ AI Coding Tools/
 │   └── screenshots/                     # App screenshots
 │
 ├── 📂 mnist-keras-classifier/           # Task D: MNIST Neural Network
-│   ├── mnist_classifier.py              # Main training script
-│   ├── model/                           # Saved models
-│   │   ├── mnist_model.h5
-│   │   └── model_architecture.json
-│   ├── visualizations/                  # Plots and metrics
-│   │   ├── training_history.png
-│   │   ├── confusion_matrix.png
-│   │   ├── sample_predictions.png
-│   │   └── accuracy_loss_curves.png
-│   ├── notebooks/                       # Jupyter notebooks
-│   │   └── mnist_analysis.ipynb
-│   ├── README.md                        # Implementation guide
-│   └── requirements.txt                 # Python dependencies
-│
+│   └── mnist_classifier.py              # Main training script
 ├── 📄 README.md                         # This file - Main documentation
-├── 📄 VideoURL.txt                      # All video demonstration links
-└── 📄 LICENSE                           # License information
+└── 📄 VideoURL.txt                      # All video demonstration links
 ```
 
 ---
@@ -185,10 +169,6 @@ Explore and implement multimodal AI capabilities using Google Gemini Pro API, in
 # Open the Colab notebook
 # Click: multimodal_use_cases.ipynb
 
-# Or run locally:
-pip install -r requirements.txt
-jupyter notebook multimodal_use_cases.ipynb
-
 # Set your API key:
 export GEMINI_API_KEY='your-api-key-here'
 ```
@@ -198,7 +178,7 @@ export GEMINI_API_KEY='your-api-key-here'
 - "Generate an image of a cozy coffee shop in cyberpunk style"
 - "Analyze this image and describe all objects you see"
 
-**📹 Video Walkthrough:** See [VideoURL.txt](VideoURL.txt) for complete demonstration
+**📹 Video Walkthrough:** See [📹Demo Video](https://youtu.be/G6181IqBKb8) for complete demonstration
 
 ---
 
@@ -236,58 +216,6 @@ Build a complete full-stack web application using Google Antigravity or other ag
 - Cloud storage integration
 - Auto-save functionality
 - Data persistence
-
-#### Tech Stack
-
-**Frontend:**
-```
-- React.js 18+ / Vue.js 3+ / Vanilla JavaScript
-- HTML5 & CSS3
-- Tailwind CSS / Bootstrap
-- Axios for API calls
-```
-
-**Backend:**
-```
-- Firebase Firestore (Database)
-- Firebase Authentication
-- Firebase Cloud Functions
-- RESTful API architecture
-```
-
-**Deployment:**
-```
-- Firebase Hosting
-- CI/CD with GitHub Actions
-- Custom domain (optional)
-```
-
-#### Application Architecture
-
-```
-NotesApp/
-├── Frontend (React)
-│   ├── Components
-│   │   ├── NoteEditor
-│   │   ├── NotesList
-│   │   ├── SearchBar
-│   │   └── TagFilter
-│   ├── Pages
-│   │   ├── Home
-│   │   ├── Editor
-│   │   └── Settings
-│   └── Services
-│       ├── noteService.js
-│       └── authService.js
-│
-└── Backend (Firebase)
-    ├── Firestore Collections
-    │   ├── users/
-    │   └── notes/
-    └── Cloud Functions
-        ├── createNote
-        ├── updateNote
-        └── deleteNote
 ```
 
 #### Setup Instructions
@@ -299,45 +227,12 @@ cd NotesApp
 # Install dependencies
 npm install
 
-# Set up Firebase
-# 1. Create a Firebase project at https://firebase.google.com
-# 2. Copy your Firebase config to .env file
-cp .env.example .env
-
 # Run development server
 npm run dev
 
-# Build for production
-npm run build
-
-# Deploy to Firebase
-firebase deploy
 ```
 
-#### Environment Variables
-
-```env
-REACT_APP_FIREBASE_API_KEY=your-api-key
-REACT_APP_FIREBASE_AUTH_DOMAIN=your-auth-domain
-REACT_APP_FIREBASE_PROJECT_ID=your-project-id
-REACT_APP_FIREBASE_STORAGE_BUCKET=your-storage-bucket
-REACT_APP_FIREBASE_MESSAGING_SENDER_ID=your-sender-id
-REACT_APP_FIREBASE_APP_ID=your-app-id
-```
-
-#### Live Demo
-🌐 **Deployed Application:** [Insert your Firebase hosting URL here]
-
-**Demo Credentials (if applicable):**
-```
-Username: demo@example.com
-Password: demo123
-```
-
-#### Screenshots
-[Add screenshots of your application here in the NotesApp/screenshots/ folder]
-
-**📹 Video Demo:** See [VideoURL.txt](VideoURL.txt) for full application walkthrough
+**📹 Video Demo:** See [📹Demo Video](https://youtu.be/kw36wvQIkiI) for full application walkthrough
 
 ---
 
@@ -354,33 +249,16 @@ Develop a cross-platform mobile application using Flutter framework with assista
 
 📊 **Activity Tracking**
 - Daily step counting
-- Distance tracking
-- Calories burned estimation
-- Activity timeline
 
-📈 **Analytics & Insights**
-- Daily, weekly, monthly statistics
-- Visual graphs and charts
-- Progress trends
-- Achievement milestones
 
 🎯 **Goal Management**
 - Set daily step goals
-- Custom fitness targets
 - Goal progress tracking
-- Achievement notifications
 
 💪 **User Experience**
 - Beautiful Material Design UI
 - Smooth animations
 - Intuitive navigation
-- Dark/light theme support
-
-🔔 **Notifications & Reminders**
-- Daily activity reminders
-- Goal achievement alerts
-- Motivational messages
-- Customizable notification settings
 
 #### Tech Stack
 
@@ -394,41 +272,6 @@ Key Packages:
 - provider: ^6.1.0               // State management
 - sqflite: ^2.3.0                // Local database
 - shared_preferences: ^2.2.0     // Settings storage
-- flutter_local_notifications    // Notifications
-- intl: ^0.18.0                  // Internationalization
-```
-
-#### App Architecture
-
-```
-StepsTracker/
-├── lib/
-│   ├── main.dart                    # App entry point
-│   ├── screens/
-│   │   ├── home_screen.dart         # Main dashboard
-│   │   ├── statistics_screen.dart   # Analytics page
-│   │   ├── goals_screen.dart        # Goal management
-│   │   └── settings_screen.dart     # App settings
-│   ├── widgets/
-│   │   ├── step_counter_widget.dart
-│   │   ├── progress_chart.dart
-│   │   └── achievement_card.dart
-│   ├── models/
-│   │   ├── activity_model.dart
-│   │   └── goal_model.dart
-│   ├── services/
-│   │   ├── pedometer_service.dart
-│   │   ├── database_service.dart
-│   │   └── notification_service.dart
-│   └── providers/
-│       ├── activity_provider.dart
-│       └── theme_provider.dart
-│
-├── android/                         # Android config
-├── ios/                             # iOS config
-└── assets/
-    ├── images/
-    └── icons/
 ```
 
 #### Setup & Installation
@@ -460,82 +303,7 @@ flutter build apk --release
 flutter build ios --release
 ```
 
-#### Platform-Specific Setup
-
-**Android (AndroidManifest.xml):**
-```xml
-<uses-permission android:name="android.permission.ACTIVITY_RECOGNITION"/>
-<uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
-```
-
-**iOS (Info.plist):**
-```xml
-<key>NSMotionUsageDescription</key>
-<string>This app needs access to your motion data to count steps</string>
-```
-
-#### Key Features Implementation
-
-**Step Counting:**
-```dart
-// Using pedometer package
-Pedometer pedometer = Pedometer();
-StreamSubscription<StepCount>? _stepCountStream;
-
-_stepCountStream = Pedometer.stepCountStream.listen((StepCount event) {
-  setState(() {
-    _steps = event.steps;
-  });
-});
-```
-
-**Data Persistence:**
-```dart
-// Using SQLite for local storage
-class DatabaseService {
-  Future<void> saveActivity(Activity activity) async {
-    final db = await database;
-    await db.insert('activities', activity.toMap());
-  }
-  
-  Future<List<Activity>> getActivities() async {
-    final db = await database;
-    final List<Map<String, dynamic>> maps = await db.query('activities');
-    return List.generate(maps.length, (i) => Activity.fromMap(maps[i]));
-  }
-}
-```
-
-#### Build Information
-
-**Android APK:**
-- Minimum SDK: 21 (Android 5.0)
-- Target SDK: 34 (Android 14)
-- Build Type: Release
-- Size: ~15MB
-
-**iOS App:**
-- Minimum iOS Version: 12.0
-- Target iOS: 17.0
-- Architecture: arm64
-
-#### Testing
-
-```bash
-# Run unit tests
-flutter test
-
-# Run integration tests
-flutter test integration_test/
-
-# Run with coverage
-flutter test --coverage
-```
-
-#### Screenshots & Demo
-[Add mobile app screenshots in StepsTracker/screenshots/]
-
-**📹 Video Walkthrough:** See [VideoURL.txt](VideoURL.txt) for complete app demonstration
+**📹 Video Walkthrough:** See [📹Demo Video](https://youtu.be/KuEb77ZYFB4) for complete app demonstration
 
 ---
 
@@ -583,7 +351,7 @@ Python 3.11 and all required dependencies have been pre-installed for this proje
 
 ## 📹 Video Guide
 For a narrated walkthrough of the code and architecture, refer to:
-[video_guide.md](./video_guide.md)
+[📹Demo Video](https://youtu.be/RwuZi9rcA84)
 
 ## 📊 Model Metadata
 - **Dataset**: MNIST (60,000 training images, 10,000 test images)
@@ -591,7 +359,7 @@ For a narrated walkthrough of the code and architecture, refer to:
 - **Optimizer**: Adam
 - **Loss Function**: Categorical Crossentropy
 
-**📹 Code Walkthrough:** See [VideoURL.txt](VideoURL.txt) for detailed code explanation and training process
+**📹 Code Walkthrough:** See [📹Demo Video](https://youtu.be/RwuZi9rcA84) for detailed code explanation and training process
 
 ---
 
@@ -618,7 +386,6 @@ For a narrated walkthrough of the code and architecture, refer to:
 - React.js 18+ / Vue.js 3+
 - Tailwind CSS / Bootstrap
 - Axios
-- Firebase SDK
 
 **Mobile Development:**
 - Flutter 3.16+
@@ -626,20 +393,6 @@ For a narrated walkthrough of the code and architecture, refer to:
 - Provider (State Management)
 - SQLite (Local Storage)
 
-### Cloud & DevOps
-- **Firebase:**
-  - Firestore (Database)
-  - Authentication
-  - Hosting
-  - Cloud Functions
-  
-- **Version Control:**
-  - Git
-  - GitHub
-  
-- **CI/CD:**
-  - GitHub Actions
-  - Firebase CLI
 
 ### AI Coding Tools
 | Tool | Purpose |
@@ -670,38 +423,7 @@ For a narrated walkthrough of the code and architecture, refer to:
 **API Keys Required:**
 ```
 - Google Gemini Pro API key
-- Firebase project credentials
 ```
-
-### Installation
-
-**1. Clone the Repository**
-```bash
-git clone https://github.com/Prachii26/DeepLearningCMPE258.git
-cd DeepLearningCMPE258/AI\ Coding\ Tools/
-```
-
-**2. Set Up Each Project**
-
-Follow the README in each project directory:
-- [`multimodal-latest-model-demo/README.md`](multimodal-latest-model-demo/README.md)
-- [`NotesApp/README.md`](NotesApp/README.md)
-- [`StepsTracker/README.md`](StepsTracker/README.md)
-- [`mnist-keras-classifier/README.md`](mnist-keras-classifier/README.md)
-
-**3. Environment Configuration**
-
-Create `.env` files as needed:
-```bash
-# For Gemini Pro
-GEMINI_API_KEY=your-api-key
-
-# For Firebase (NotesApp)
-FIREBASE_API_KEY=your-firebase-key
-FIREBASE_PROJECT_ID=your-project-id
-```
-
----
 
 ## 🎬 Video Walkthroughs
 
@@ -822,22 +544,9 @@ All video demonstrations are available in **[`VideoURL.txt`](VideoURL.txt)**
 **Task D - MNIST:**
 - **Challenge:** Overfitting on training data
 - **Solution:** Added dropout layers, batch normalization, and data augmentation
-
-### Best Practices Applied
-
-1. **Code Organization:** Modular structure with clear separation of concerns
-2. **Version Control:** Meaningful commit messages and branching strategy
-3. **Documentation:** Comprehensive comments and README files
-4. **Testing:** Unit tests and integration tests where applicable
-5. **Security:** Environment variables for sensitive data
-6. **Performance:** Optimized code and lazy loading where needed
-
 ---
 
 ## 🙏 Acknowledgments
-
-**Course Instructor:**
-- Professor [Name] - CMPE 258, SJSU
 
 **AI Tools & Platforms:**
 - Google AI Team - Gemini Pro, Antigravity
@@ -850,11 +559,6 @@ All video demonstrations are available in **[`VideoURL.txt`](VideoURL.txt)**
 - Flutter team
 - Firebase team
 - React community
-
-**Special Thanks:**
-- Classmates for collaboration and peer review
-- Stack Overflow community for troubleshooting
-- Documentation authors for comprehensive guides
 
 ---
 
@@ -875,43 +579,8 @@ This work represents original implementation and learning. While AI tools were u
 **Semester:** Spring 2025
 
 **Repository:** [github.com/Prachii26/DeepLearningCMPE258](https://github.com/Prachii26/DeepLearningCMPE258)
-
-**For Questions:**
-- Open an issue in this repository
-- Email through university portal
-- Office hours: [Schedule if applicable]
-
 ---
 
-## 🔄 Version History
-
-| Version | Date | Changes |
-|---------|------|---------|
-| 1.0 | Feb 2026 | Initial release - All 4 tasks completed |
-| 1.1 | Feb 2026 | Added detailed documentation and video links |
-| 1.2 | Feb 2026 | Updated README with comprehensive project details |
-
----
-
-## 📊 Project Statistics
-
-```
-Total Lines of Code:     ~5,000+
-Total Files:             ~150+
-Total Commits:           50+
-Development Time:        ~80 hours
-Languages Used:          4 (Python, JavaScript, Dart, HTML/CSS)
-Frameworks Used:         5 (TensorFlow, React, Flutter, Firebase, Keras)
-AI Tools Utilized:       6 (Gemini, Antigravity, Claude Code, etc.)
-```
-
----
-
-**Last Updated:** February 15, 2026
-
-**Status:** ✅ All Tasks Complete | 📹 All Videos Uploaded | 📚 Fully Documented
-
----
 
 <div align="center">
 
@@ -919,6 +588,6 @@ AI Tools Utilized:       6 (Gemini, Antigravity, Claude Code, etc.)
 
 **Repository:** https://github.com/Prachii26/DeepLearningCMPE258
 
-Made with 💻 and ☕ for CMPE 258 - Spring 2025
+Made with 💻 and ☕ for CMPE 258 - Spring 2026
 
 </div>
