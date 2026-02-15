@@ -1,1 +1,16 @@
 Link for the video recordings:
+C1_numpy_foundations_for_deep_learning.ipynb: https://youtu.be/OMFBDDBuXzE
+C2__pytorch_tensors_from_zero_to_hero.ipynb: https://youtu.be/W3SZoNAbJUw
+C3_tensorflow_tensor_operations_tutorial.ipynb: https://youtu.be/RBC1EWhP3Gs
+C4_jax_deep_learning_tutorial.ipynb: https://youtu.be/WrwXs_C6YNc
+C5_calculus_for_deep_learning.ipynb: https://youtu.be/gYvyjZ0Fs_k
+C6__probability_fundamentals_for_deep_learning.ipynb: https://youtu.be/oaWX2BvhINQ
+C7_probability_for_deep_learning.ipynb: https://youtu.be/gdtxJJ2b8Yo
+C8_linear_algebra_for_deep_learning.ipynb: https://youtu.be/1YXVO3UvQ9Q
+C9_neural_networks_from_scratch.ipynb: https://youtu.be/KUXPTgfInNU
+C10_why_deep_learning_works_geometric_intuition.ipynb: https://youtu.be/qxl6KPWM3i8
+C11_pytorch_neural_networks_tutorial.ipynb: https://youtu.be/qgoJ_9kvGcY
+C12_pytorch_advanced_tutorial.ipynb: https://youtu.be/kRF6uQNz9gw
+C13_keras_tensorflow_neural_networks_tutorial.ipynb: https://youtu.be/J-WaHzAa1Wk
+C14_keras_tensorflow_advanced_tutorial.ipynb: https://youtu.be/CTxtqxzhv4Y
+C15_16_17_jax_neural_networks_tutorial.ipynb: https://youtu.be/NMdEP5ThLR4
