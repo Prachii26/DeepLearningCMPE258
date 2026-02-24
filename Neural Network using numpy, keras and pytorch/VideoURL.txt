@@ -1,6 +1,6 @@
 Link to the video explainations:
-Colab(A):
-Colab(B):
-Colab(C):
-Colab(D):
-Colab(E):
+Colab(A): https://youtu.be/kmQ5_teEWpI
+Colab(B): https://youtu.be/X-OdhamMlmw
+Colab(C): https://youtu.be/EWjVdYPbISM
+Colab(D): https://youtu.be/QPRWQ9Cm0uE
+Colab(E): https://youtu.be/GXIT1l4C04k
