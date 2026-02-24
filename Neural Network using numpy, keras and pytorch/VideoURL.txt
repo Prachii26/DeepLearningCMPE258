@@ -1,0 +1,6 @@
+Link to the video explainations:
+Colab(A):
+Colab(B):
+Colab(C):
+Colab(D):
+Colab(E):
