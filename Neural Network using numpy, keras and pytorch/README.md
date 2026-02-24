@@ -10,6 +10,12 @@ It includes **five Google Colab notebooks (A–E)** implementing a **3-layer dee
 All walkthrough videos are included in this repo:
 
 - **Video links:** see **`VideoURL.txt`** (root directory)
+- Link to the video explainations:
+    - Colab(A): https://youtu.be/kmQ5_teEWpI
+    - Colab(B): https://youtu.be/X-OdhamMlmw
+    - Colab(C): https://youtu.be/EWjVdYPbISM
+    - Colab(D): https://youtu.be/QPRWQ9Cm0uE
+    - Colab(E): https://youtu.be/GXIT1l4C04k
 
 Each video shows:
 - the notebook checked into GitHub
