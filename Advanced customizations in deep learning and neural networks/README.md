@@ -29,7 +29,11 @@ Advanced_customizations_in_deep_learning_and_neural_networks/
 ## 🎬 Video Walkthrough
 
 The full code walkthrough video is available on YouTube.  
-📺 See [`Videos/VideoURL.txt`](Videos/VideoURL.txt) for the link.
+📺 See [`Videos/VideoURL.txt`](Videos/VideoURL.txt) for the link or click below:
+
+[`Advanced_customizations_in_DL_and_NN_Part1`](https://youtu.be/RSstZTX3cP8)
+
+[`Advanced_customizations_in_DL_and_NN_Part2`](https://youtu.be/iGIrp6olgPs)
 
 The video covers:
 - Line-by-line explanation of all notebook cells
