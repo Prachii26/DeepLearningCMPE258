@@ -16,6 +16,7 @@ Deep_learning_training_design_space/
 ├── Final_cnn_fundamentals_tutorial(Prachi_Gupta).ipynb
 ├── Final_hyperparameter_tuning_tutorial(Prachi_Gupta).ipynb
 ├── Final_important_classification_metrics_tutorial(Prachi_Gupta).ipynb
+├── Final_modern_cnn_architectures_tutorial(Prachi Gupta).ipynb
 ├── Final_optimizers_deep_learning_tutorial(Prachi_Gupta).ipynb
 ├── README.md
 ```
@@ -44,10 +45,17 @@ Deep_learning_training_design_space/
 - Confusion Matrix
 - Model evaluation techniques
 
+### 🔹 Modern CNN Architectures
+- AlexNet, VGG, ResNet, Inception
+- Architectural innovations & comparisons
+- Implementation and performance insights
+
 ### 🔹 Optimizers in Deep Learning
 - Gradient Descent variants
 - Adam, RMSprop, SGD
 - Optimization comparisons
+
+
 
 ---
 
