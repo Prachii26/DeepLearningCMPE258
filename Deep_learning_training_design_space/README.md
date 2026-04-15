@@ -29,31 +29,40 @@ Deep_learning_training_design_space/
 - Sigmoid, ReLU, Tanh, Softmax
 - Advantages & limitations
 - Visualization and implementation
+- Final_activation_functions_tutorial: https://youtu.be/_NDr9LiYRms
 
 ### 🔹 CNN Fundamentals
 - Convolution, pooling, feature maps
 - CNN architecture
 - Practical implementation
+- Final_cnn_fundamentals_tutorial: https://youtu.be/_74W7-il4AY
 
 ### 🔹 Hyperparameter Tuning
 - Learning rate, batch size, epochs
 - Grid search and tuning strategies
 - Model performance improvement
+- Final_hyperparameter_tuning_tutorial: https://youtu.be/0wf9D-dzWmg
+
 
 ### 🔹 Classification Metrics
 - Accuracy, Precision, Recall, F1-score
 - Confusion Matrix
 - Model evaluation techniques
+- Final_important_classification_metrics_tutorial: https://youtu.be/CbHJrIK4V10
+
 
 ### 🔹 Modern CNN Architectures
 - AlexNet, VGG, ResNet, Inception
 - Architectural innovations & comparisons
 - Implementation and performance insights
+- Final_modern_cnn_architectures_tutorial: https://youtu.be/ZeZWTInfR94
 
 ### 🔹 Optimizers in Deep Learning
 - Gradient Descent variants
 - Adam, RMSprop, SGD
 - Optimization comparisons
+- Final_optimizers_deep_learning_tutorial: https://youtu.be/ZrmacaPl6pE
+
 
 
 
@@ -89,7 +98,7 @@ pip install numpy matplotlib tensorflow keras scikit-learn
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/<your-username>/Deep_learning_training_design_space.git
+git clone https://github.com/Prachii26/Deep_learning_training_design_space.git
 ```
 
 2. Navigate to the folder:
