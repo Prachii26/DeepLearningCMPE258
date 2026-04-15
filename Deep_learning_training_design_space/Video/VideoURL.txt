@@ -1,5 +1,5 @@
-Final_activation_functions_tutorial:
-Final_cnn_fundamentals_tutoria:
-Final_hyperparameter_tuning_tutorial:
-Final_important_classification_metrics_tutorial:
-Final_optimizers_deep_learning_tutorial:
+Final_activation_functions_tutorial: https://youtu.be/_NDr9LiYRms
+Final_cnn_fundamentals_tutorial: https://youtu.be/_74W7-il4AY
+Final_hyperparameter_tuning_tutorial: https://youtu.be/0wf9D-dzWmg
+Final_important_classification_metrics_tutorial: https://youtu.be/CbHJrIK4V10
+Final_optimizers_deep_learning_tutorial: https://youtu.be/ZrmacaPl6pE
