@@ -1,7 +1,8 @@
 # 🧠 Deep Think with Confidence (DeepConf)
 
 **CMPE 258 — Deep Learning | Short Story Assignment | Spring 2026**  
-**San Jose State University**
+**San Jose State University**        
+**Medium Article:** [Link to Medium Article](https://medium.com/@prachigupta2610/when-your-llm-already-knows-which-answers-to-trust-its-just-not-telling-you-394990015aa5)
 
 ![Course](https://img.shields.io/badge/Course-CMPE%20258%20Deep%20Learning-4A6FA5?style=flat-square)
 ![University](https://img.shields.io/badge/University-San%20Jose%20State-0055A2?style=flat-square)
@@ -32,8 +33,6 @@
 | **Institution** | Meta AI Research (FAIR) & UC San Diego |
 | **Published** | August 2025 |
 | **arXiv** | [arXiv:2508.15260](https://arxiv.org/abs/2508.15260) |
-| **Project Page** | [jiaweizzhao.github.io/deepconf](https://jiaweizzhao.github.io/deepconf) |
-
 ---
 
 ## 🎬 Video Presentation
