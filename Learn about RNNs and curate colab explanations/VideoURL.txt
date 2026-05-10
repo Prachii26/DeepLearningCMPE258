@@ -1,1 +1,5 @@
-
+Youtube Link:
+Final_gnn_fundamentals_tutorial :
+Final_nlp_deep_learning_10_years_tutorial :
+Final_rnn_lstm_gru_wavenet_zero_to_hero :
+Final_vision_transformers_tutorial : 
